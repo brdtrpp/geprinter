@@ -1,8 +1,26 @@
 Template.buildItem.helpers({
   bgcolor: function() {
     var buildType = BuildType.findOne({build: this.build, rev: this.rev});
-    console.log(buildType);
-  }
+    if (buildType != undefined) {
+      return buildType.color;
+    } else {
+      return "white";
+    }
+  },
+
+  startTimeFormat: function() {
+    if (this.startTime != undefined) {
+      var start = moment(this.startTime).format("ddd, h:mmA");
+      return start;
+    }
+
+  },
+  endTimeFormat: function() {
+    if (this.endTime != undefined) {
+      var end = moment(this.endTime).format("ddd, h:mmA");
+      return end;
+    }
+  },
 });
 
 Template.buildItem.events({
