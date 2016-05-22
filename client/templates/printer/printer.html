@@ -1,0 +1,12 @@
+<template name='printer'>
+  <div class='col-sm-2 machine' role='button'>
+    <div class="panel panel-primary" align='center'>
+      <div class="panel-heading"  role='button'>
+        <h3 class="panel-title">SLA-{{machine}}</h3>
+      </div>
+      {{#each build}}
+        {{> buildItem}}
+      {{/each}}
+    </div>
+  </div>
+</template>

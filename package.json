@@ -1,0 +1,10 @@
+{
+  "name": "geprint",
+  "private": true,
+  "scripts": {
+    "start": "meteor --port $IP:$PORT"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  }
+}

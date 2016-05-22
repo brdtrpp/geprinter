@@ -1,0 +1,15 @@
+<head>
+  <title>GE Printer Manager</title>
+</head>
+
+<body>
+  {{> navbar}}
+  <div class='container-fluid'>
+    {{#each printers}}
+      {{> printer}}
+    {{/each}}
+  </div>
+
+  {{>modals}}
+
+</body>

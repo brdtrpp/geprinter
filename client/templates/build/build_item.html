@@ -1,0 +1,22 @@
+<template name='buildItem'>
+  <div class="panel-body" role='button' data-toggle="modal" data-target="#loadBuild" style="background-color:{{bgcolor}};">
+    {{build}} Rev {{rev}}
+  </div>
+  <div class="btn-group btn-group-xs btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default start">Start</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default mid">Middle</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default stop">Stop</button>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class=row>
+      <div class='col-xs-6'>{{startTime}}</div>
+      <div class='col-xs-6'>{{endTime}}</div>
+    </div>
+  </div>
+</template>
