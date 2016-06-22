@@ -34,11 +34,12 @@ Template.buildItem.events({
   },
 
   'click .stop': function() {
-    if (this.endTime == undefined) {
-      Builds.update({_id: this._id}, {$set: {endTime: Date()}});
-    } else {
-      console.log("ERROR");
-    }
+    $('#endBuild').modal('show');
+    // if (this.endTime == undefined) {
+    //   Builds.update({_id: this._id}, {$set: {endTime: Date()}});
+    // } else {
+    //   console.log("ERROR");
+    // }
   },
 
   'click .mid': function() {

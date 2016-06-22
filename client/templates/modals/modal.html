@@ -24,7 +24,7 @@
     </div>
   </div>
 
-    <div class="modal fade" id="createBuildType" tabindex="-1" role="dialog" aria-labelledby="createBuildTypeLabel">
+  <div class="modal fade" id="createBuildType" tabindex="-1" role="dialog" aria-labelledby="createBuildTypeLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -45,6 +45,31 @@
           <button type="submit" class="btn btn-primary">Add Build Type</button>
         </div>
         {{/autoForm}}
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="endBuild" tabindex="-1" role="dialog" aria-labelledby="endBuildLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="endBuild">Stop build on {{machineNumber}}</h4>
+        </div>
+        <!-- {{#autoForm collection="BuildType" id="insertBuildsTypeForm" type="insert"}}
+        <div class="modal-body">
+          <fieldset>
+            {{> afQuickField name='build'}}
+            {{> afQuickField name='rev'}}
+            {{> afQuickField name='duration'}}
+            {{> afQuickField name='color'}}
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Build Type</button>
+        </div>
+        {{/autoForm}} -->
       </div>
     </div>
   </div>

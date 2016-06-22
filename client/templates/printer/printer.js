@@ -2,6 +2,12 @@ Template.printer.events({
   'click .machine': function() {
     Session.set('machine', this.machine);
   },
+
+  'click .copy': function() {
+    Session.set('machine', this.machine);
+    var machine = Session.get('machine');
+    console.log(machine);
+  }
 });
 
 Template.printer.helpers({
@@ -10,5 +16,5 @@ Template.printer.helpers({
     var array = [];
     array.push(build[0]);
     return array;
-  }
+  },
 });
